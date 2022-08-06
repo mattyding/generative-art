@@ -125,7 +125,7 @@ def random_walk_stats_animation(params, walks, cmap, seed):
 
 
 def random_walk_art(num_steps=400, max_step_size=0.15, num_walks=50):
-    seed =  np.random.randint(0, 1000000)
+    seed = np.random.randint(0, 1000000)
     np.random.seed(seed)
     os.mkdir(f"{os.getcwd()}/figures/randomwalk/{seed}-{num_steps}-{max_step_size}-{num_walks}")
     walks = [random_walk(num_steps, max_step_size) for _ in range(num_walks)]
@@ -135,11 +135,11 @@ def random_walk_art(num_steps=400, max_step_size=0.15, num_walks=50):
 
 
 def main():
-    for _ in range(6):
-        num_steps = np.random.randint(100, 150)
-        max_step_size = np.random.uniform(0.01, 0.3)
-        num_walks = np.random.randint(20, 100)
-        random_walk_art(num_steps, round(max_step_size, 2), num_walks)
+    num_steps = np.random.randint(100, 150)
+    max_step_size = np.random.uniform(0.01, 0.3)
+    num_walks = np.random.randint(20, 100)
+    #random_walk_art(num_steps, round(max_step_size, 2), num_walks)
+    random_walk_art(200, 0.02, 100)
 
 
 if __name__ == '__main__':

@@ -138,8 +138,7 @@ def main():
     num_steps = np.random.randint(100, 150)
     max_step_size = np.random.uniform(0.01, 0.3)
     num_walks = np.random.randint(20, 100)
-    #random_walk_art(num_steps, round(max_step_size, 2), num_walks)
-    random_walk_art(200, 0.02, 100)
+    random_walk_art(num_steps, round(max_step_size, 2), num_walks)
 
 
 if __name__ == '__main__':
